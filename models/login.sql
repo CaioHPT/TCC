@@ -1,0 +1,1 @@
+select id from clientes where email='gabrielnascimento_17@hotmail.com' AND senha = aes_encrypt("Gabriels@1",'brothers-cars-user-create');

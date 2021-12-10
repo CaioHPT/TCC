@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+  }
+  
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+*{
+    font-family: 'RobotoMono','monospace';
+}
+
+header{
+    font-size: 18px;
+}
+
+body{
+    background-color: rgba(202, 202, 202, 0.514);
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--bg-item);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.btnNav:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.nav-item:first-child{
+    margin-left: 15px;
+}
+
+.nav-item{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.divBreadCrumb{
+    margin-top: 30px;
+}
+
+.breadcrumb{
+    font-size: 18px;
+    background-color: transparent;
+}
+
+
+.breadcrumb a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.623);
+    transition: all .3s ease-in-out;
+}
+
+.breadcrumb a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.activeBreadCrumb{
+    color: rgb(0, 0, 0);
+}
+
+.activeBreadCrumb:hover{
+    cursor: default;
+}
+
+.sideMenu{
+    background-color: #fff;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+    margin-bottom: 20px;
+}
+
+.user{
+    padding-top: 25px;
+}
+
+.user img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0px  1px 7px 1px rgba(0, 0, 0, 0.781);
+}
+
+.textUser{
+    margin-left: 15px;
+}
+
+.textUser h5{
+    font-weight: bold;
+}
+
+.textUser span{
+    font-size: 17px;
+}
+.btnSideMenu{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btnSideMenu button{
+    color: #fff;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    background: linear-gradient(to left, #FFB000, #fffb00);
+    border: transparent;
+    width: 100%;
+    height: 3rem;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.24);
+}
+
+
+
+.btnSideMenu button:hover{
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.btnSideMenu button:focus{
+    outline: none;
+}
+
+.btnMenu{
+    display: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    border:solid 1px black;
+    background-color: var(--bg);
+    border-radius: 10px;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 10px;
+    transition: all .9s ease-in-out;
+    box-shadow: 0px 1px 10px rgba(0, 0,0, 0.5);
+}
+
+.btnMenu:hover{
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.btnMenu:focus{
+    outline: none;
+}
+
+.personalInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.sairConta, .personalInfo a{
+    text-decoration: none;
+    color: rgba(70, 63, 63, 0.829);
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.sairConta:hover{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.personalInfo a:hover{
+    color: rgb(0, 0, 0);
+}
+
+.btnInfo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 2.5rem;
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+
+.btnInfo img, svg{
+    margin-bottom: 1px;
+    margin-right: 8px;
+}
+
+.btnInfo svg:last-child{
+    margin-left: 5px;
+}
+
+.btnInfo:focus{
+    outline: none;
+}
+
+.close:focus{
+    outline: none;
+}
+
+.divForm{
+    background-color: #fff;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+    margin-bottom: 20px;
+}
+
+.divForm h5{
+    color: rgba(31, 29, 29, 0.829);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.divForm h2{
+    color: rgba(0, 0, 0, 0.897);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.divForm p, label{
+    font-size: 19px;
+    color: rgba(41, 38, 38, 0.829);
+    font-weight: 400;
+}
+
+.divForm h3{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.divCarousel{
+    max-width: 350px;
+}
+
+.card{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.199);
+    margin-bottom: 30px;
+    max-width: auto;
+}
+
+.dropdown-menu{
+    margin-top: 20px;
+    margin-left: 40%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.199);
+    margin-bottom: 5px;
+}
+
+.img-carousel-item{
+    width: 100%;
+    max-width: 350px;
+    min-width: 155px;
+}
+
+.info svg{
+    display: none;
+    float: right;
+    color: rgba(0, 0, 0, 0.719);
+    transition: all .2s ease-in-out;
+}
+
+.info svg:hover{
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.363))
+}
+
+.card-body{
+    margin-top: -10px;
+    margin-left: -15px;
+    
+}
+
+.card-body h5{
+    margin-top: -15px;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.card-body p{
+    font-size: 18px;
+}
+
+.card-body > p:last-of-type {
+    color:red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.localization svg{
+    width: 20px;
+}
+
+.card-body span{
+    font-size:18px;
+}
+
+.divInfo{
+    margin-left: -25px;
+}
+
+.infoBox{
+    padding-top: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(236, 234, 234);
+    width: auto;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.199);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.infoBox p{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.infoBox img, .infoBox svg{
+    width: 20px;
+}
+
+.infoBox svg{
+    margin-left: 5px;
+}
+

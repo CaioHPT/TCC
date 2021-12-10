@@ -1,0 +1,245 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+  }
+
+* {
+    font-family: 'RobotoMono';
+}
+
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+header{
+    font-size: 18px;
+}
+
+body {
+    background-color: rgba(202, 202, 202, 0.514);
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+    margin-bottom: 10px;
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--bg-item);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.btnNav:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.nav-item:first-child{
+    margin-left: 15px;
+}
+
+.nav-item{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+
+label {
+    font-weight: 600;
+}
+
+.cadastroForm{
+    background-color: #fff;
+}
+
+.cadastroForm select{
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.151);
+}
+
+.cadastroForm select:hover{
+    cursor: pointer;
+}
+
+.cadastroForm select:focus{
+    border: none;
+    outline: none;
+    border-bottom: 4px solid var(--bg-item);
+    border-radius: 1px;
+    box-shadow: none;
+}
+
+.cadastroForm input[type='radio']:hover{
+    cursor: pointer;
+}
+
+.cadastroForm h4{
+    text-align: center;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    transition: all .2s ease-in-out;
+    border: none;
+    border-bottom: 0.001em solid rgb(0, 0, 0);
+}
+
+.input:focus{
+    outline: none;
+    border-bottom: 4px solid var(--bg-item);
+    border-radius: 1px;
+}
+
+.rounded {
+    border-radius: 15px !important;
+}
+
+.shadowForte {
+    box-shadow: 0px  1px 6px 1px rgba(0, 0, 0, 0.39);
+}
+
+.foto {
+    border: solid 1px black;
+}
+
+.input-group-text {
+    background-color: var(--bg-item);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.btnForm {
+    background-color: var(--bg-item);
+    border-radius: 8px;
+    border: none;
+    height: 30px;
+    width: 250px;
+    box-shadow: 0px  1px 5px 1px rgba(0, 0, 0, 0.192);
+    transition: all .3s ease-in-out;
+    font-weight: bold;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnForm:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnForm:focus{
+    outline: none;
+}
+
+#erro{
+    color: #c72a39; 
+    border-radius: 4px; 
+    height: 50px; 
+    padding-top: 12px; 
+    border-color: #f5c6cb;
+}
+
+@media(max-width:1181px){
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+
+    .btnForm{
+        height: 35px;
+        width: 100%;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:768px){
+    h4{
+        text-align: center;
+    }
+}
+
+@media(max-width:375px){
+    h4{
+        font-size: 20px;
+    }
+    .custom-file-label{
+        font-size: 14px;
+    }
+    .divButton{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnForm{
+        height: 25px;
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+    .input-group-prepend{
+        width: 60px;
+        height: 100%;
+    }
+    .input-group-text {
+        font-size: 14px;
+        padding: 9px 8px 6px 8px;
+    }
+}
+
+@media(max-width:330px){
+    .custom-file-label{
+        font-size: 12px;
+        padding-top: 8px;
+        padding-left: 4px;
+    }
+}
+
+#btn-modal {
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+  }

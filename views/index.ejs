@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brothers Cars</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsePage.css">
+    <link rel="shortcut icon" href="images/logo-tamanho-certo.png" type="image/x-icon">
+
+    
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navBar ">
+        <div class="container-fluid">
+            <img src="images/logo-tamanho-certo.png" alt="">
+            
+            <div class="navbar-header">
+                <button type="button" class='navbar-toggler' data-toggle="collapse" data-target="#navSite">
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                    width="50" height="40" style="color:#fff;" fill="currentColor" 
+                    class="bi bi-justify" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="collapse navbar-collapse pl-1" id="navSite">
+                <ul class="nav navbar-nav mr-auto" >
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/catalogo">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Conta</a>
+                    </li>
+                </ul>
+
+                <% if (user == null || user == undefined || user == '') { %>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cadastro">Sign up</a>
+                        </li>
+                        <a href="/incluircarro"><button class="btnNav">+ Sell Car</button></a>
+                    </ul>
+                <% } else { %>
+                    <ul class="navbar-nav ml-auto">
+                        <li style="margin-top: 6px; margin-right: 20px ;color : white;" class="nav-item">
+                            Bem vindo, <%=user.email %>
+                        </li>
+                        <a href="/incluircarro"><button class="btnNav">+ Sell Car</button></a>
+                    </ul>
+                <% } %>
+
+            </nav>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class='row'>
+                <div class='col text'>
+                    <h1>O Jeito facil de achar o carro certo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class='col divFotoPrincipal'>
+                    <picture>
+                        <source media="(max-width: 470px)" srcset="images/car2.png" class="foto">
+                        <img src="images/carroIndex.png" width="650px" alt="Carro modelo" class="foto">
+                    </picture>
+                </div>
+            </div>
+            <div class="row">
+                <span>
+                    <h4>
+                        <button class="textInput activeBusca ">
+                            Comprar Carro
+                        </button>
+                    </h4>
+                </span>
+                
+                <span>
+                    <h4>
+                        <a href="/incluirCarro">
+                            <button class="textInput" >
+                                Quero Vender
+                            </button>
+                        </a>
+                    </h4>
+                </span>
+            </div>
+            <form action="/catalogo" method="POST">
+                <div class="row inputBusca">
+                    <div class='form-group col-xl-8 col-lg-8 col-md-6 col-sm-15 col-12'>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" 
+                                    width="16" height="24" fill="currentColor" 
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </span>
+                            </div>
+
+                                <input name="searchCarro" type="text" class="form-control" aria-label="Sizing example input" 
+                                aria-describedby="inputGroup-sizing-default"
+                                placeholder="Digite um modelo de carro">
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-2 col-sm-14 col-12">
+                        <button  type="submit"  class="btn-input">VER OFERTAS (<%=carros %>)</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col" id="textCarroMaisBuscado">
+                    <h4>Carros mais buscados</h4>
+                <div>
+            </div>
+        
+           
+            <div class="carousel" data-flickity='{ "cellAlign": "left" ,
+            "freeScroll": true, "wrapAround": true}'>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                        <img src="images/ranger.jpg" alt="">
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                            <img src="images/hb20.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                            <img src="images/focus.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                            <img src="images/toro.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                            <img src="images/onix.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                            <img src="images/gol.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                            <img src="images/honda-fit.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="cardCarousel" >
+                        <div class="card">
+                            <img src="images/corolla.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+      
+    </footer>
+    <script src="js/scriptIndex.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

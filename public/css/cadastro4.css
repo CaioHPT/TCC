@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+}
+
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+* {
+    font-family: 'RobotoMono';
+}
+
+header{
+    font-size: 18px;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+    margin-bottom: 10px;
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--bg-item);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.btnNav:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.nav-item:first-child{
+    margin-left: 15px;
+}
+
+.nav-item{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.btnNext {
+    background-color: var(--bg-item);
+    border-radius: 0;
+    width: 20%;
+    height: 150%;
+    border: solid rgba(0, 0, 0, 0.411) 1px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btnBack {
+    background-color: transparent;
+    border-radius: 0;
+    width: 20%;
+    height: 150%;
+    border: solid rgba(0, 0, 0, 0.411) 1px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btnBack:hover{
+    background-color: rgb(238, 237, 237);
+    cursor: pointer;
+}
+
+.btnNext:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnBack:focus{
+    outline: none;
+}
+
+.btnNext:focus{
+    outline: none;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divInfo{
+    display: flex;
+    justify-content: center;
+}
+
+.divSelect{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.btnSelect{
+    padding-left: 20px;
+    padding-right: 30px;
+    margin-right: 8px;
+    margin-left: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.btnSelect:hover{
+    box-shadow: 0px  0px 8px 1px rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+
+.btnSelect:focus{
+    outline: none;
+}
+
+.active{
+    background-color: #F7A900;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.divSelect img{
+    margin-top: -3px;
+    margin-left: -50px;
+    color: black;
+}
+
+
+@media(max-width:991px){
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:740px){
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:545px){
+    .divButton{
+        flex-direction: column;
+    }
+    .btnNext{
+        width: 80%;
+        margin-bottom: 10px;
+        padding: 7px;
+    }
+    .btnBack{
+        width: 80%;
+        margin-bottom: 10px;
+        padding: 7px;
+    }
+    .divInfo{
+        margin-left: 1px;
+    }
+    h1{
+        font-size: 27px;
+    }
+}
+
+@media(max-width:400px){
+    .btnSelect{
+        font-size: 15px;
+    }
+    .btnNext{
+        font-size: 14px;
+    }
+    .btnBack{
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:350px){
+    .btnSelect{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+  }
+
+* {
+    font-family: 'RobotoMono';
+}
+
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+header{
+    font-size: 18px;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+    margin-bottom: 10px;
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--bg-item);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.btnNav:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.nav-item:first-child{
+    margin-left: 15px;
+}
+
+.nav-item{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+input[type='radio']:hover, 
+input[type='checkbox']:hover,
+select:hover{
+    cursor: pointer;
+}
+
+
+.btnNext {
+    background-color: var(--bg-item);
+    border-radius: 0;
+    width: 100%;
+    height: 125%;
+    border: solid rgba(0, 0, 0, 0.411) 1px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.btnBack {
+    background-color: transparent;
+    border-radius: 0;
+    width: 100%;
+    height: 125%;
+    border: solid rgba(0, 0, 0, 0.411) 1px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.btnBack:hover{
+    background-color: rgb(238, 237, 237);
+}
+
+.btnNext:hover{
+    background-color: #ff8800;
+}
+
+.font-weight-bold{
+    font-weight: 600 !important;
+}
+
+@media(max-width:991px){
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+}

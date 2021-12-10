@@ -1,0 +1,252 @@
+@media(max-width:1199px){
+    .btn-input{
+        width: 300px;
+    }
+}
+
+@media(max-width:1085px){
+    .foto{
+        width: 550px;
+    }
+}
+
+@media(max-width:992px){
+    .text{
+        margin-top: 70px;
+    }
+    .foto{
+        width: 600px;
+    }
+    .divFotoPrincipal{
+        margin-left: 50px;
+    }
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:767px){
+    .flickity-prev-next-button{
+        margin-top: 15px;
+    }
+    .foto{
+        width: 550px;
+    }
+    .divFotoPrincipal{
+        margin-left: 0px;
+    }
+    .col-sm-14{
+        display: grid;
+        justify-content: center;
+    }
+
+    .card{
+        width: 13rem; 
+        height: 8rem;
+    }
+    .carousel{
+        height: 60%;
+    }
+    .text{
+        margin-top: 45px;
+    }
+}
+
+
+@media(max-width:607px){
+    .foto{
+        width: 500px;
+    }
+}
+
+@media(max-width:576px){
+    .divFotoPrincipal{
+        margin-left: 13px;
+    }
+
+    .card{
+        width: 10rem; 
+        height: 6rem;
+    }
+}
+
+@media(max-width:560px){
+    .foto{
+        width: 480px;
+    }
+    .divFotoPrincipal{
+        margin-left: 10px;
+    }
+}
+
+
+@media(max-width:543px){
+    .divFotoPrincipal{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:531px){
+    .foto{
+        width: 440px;
+    }
+    .divFotoPrincipal{
+        margin-left: 15px;
+    }
+    .text{
+        margin-top: 75px;
+    }
+    h1{
+        font-size: 30px;
+        font: bold;
+    }
+    p{
+        font-size: 15px;
+    }
+    .text{
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:502px){
+    .divFotoPrincipal{
+        margin-left: auto;
+    }
+}
+
+@media(max-width:471px){
+    .foto{
+        width: 400px;
+    }
+    h1{
+        font-size: 28px;
+        font: bold;
+    }
+}
+
+@media(max-width:432px){
+    .flickity-prev-next-button{
+        width: 20px;
+        height: 20px;
+    }
+    .foto{
+        width: 350px;
+    }
+    .divFotoPrincipal{
+        margin-left: 8px;
+    }
+    h1{
+        font-size: 26px;
+        font: bold;
+    }
+    .textInput{
+        font-size: 20px;
+    }
+    .btn-input{
+        font-size: 15px;
+        
+        margin-left: 30px;
+    }
+    .form-control{
+        font-size: 15px;
+    }
+    .col-sm-14{
+        margin-left: -15px;
+        display: inline-flex;
+        justify-content: center;
+    }
+    .card{
+        width: 8rem; 
+        height: 5rem;
+    }
+    #textCarroMaisBuscado h4{
+        font-size: 20px;
+    }
+    .carousel{
+        margin-top: -20px;
+    }
+}
+
+@media(max-width:420px){
+    .divFotoPrincipal{
+        margin-left: 0px;
+    }
+}
+
+
+@media(max-width:381px){
+    .foto{
+        width: 320px;
+    }
+
+    .text{
+        margin-top: 50px;
+    }
+
+    .divFotoPrincipal{
+        margin-left: 0px;
+    }
+
+    .textInput{
+        font-size: 19px;
+    }
+}
+
+@media(max-width:360px){
+    .foto{
+        width: 320px;
+    }
+    .divFotoPrincipal{
+        margin-left: -7px;
+    }
+}
+
+@media(max-width:343px){
+    .divFotoPrincipal{
+        margin-left: -16px;
+    }
+}
+
+@media(max-width:335px){
+    .foto{
+        width: 310px;
+    }
+}
+
+
+@media(max-width:325px){
+    .foto{
+        width: 300px;
+    }
+    .divFotoPrincipal{
+        margin-left: -20px;
+    }
+    .textInput{
+        font-size: 17px;
+    }
+}
+
+@media(max-width:313px){
+    .foto{
+        width: 290px;
+    }
+    .carousel{
+        height: 65%;
+    }
+}
+
+@media(max-width:301px){
+    .foto{
+        width: 285px;
+    }
+}
+
+@media(max-width:296px){
+    .divFotoPrincipal{
+        margin-left: -30px;
+    }
+}

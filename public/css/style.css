@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+  }
+  
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+header{
+    font-size: 18px;
+    font-family: 'RobotoMono','monospace';
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(to left, #FFB000, #fffb00);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+}
+
+.btnNav:hover{
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.img-login{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 350px;
+}
+
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main form {
+    font-family: 'RobotoMono';
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.438);
+    color: var(--bg);
+    transition: all .3s ease-in-out;
+}
+
+.input:focus{
+    outline: none;
+    border-bottom: 4px solid rgb(233, 32, 32);
+}
+#button{
+    margin-top: 5px;
+    font-size: 21px;
+    font: bold;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(233, 32, 32);
+}

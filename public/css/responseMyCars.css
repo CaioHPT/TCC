@@ -1,0 +1,345 @@
+
+@media(max-width:1720px){
+    .localization svg{
+        width: 18px;
+    }
+}
+
+@media(max-width:1670px){
+    .infoBox{
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:1495px){
+    .infoBox p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1450px){
+    .card-body h5{
+        font-size: 22px;
+    }
+    .infoBox p{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:1395px){
+    .card-body > p:last-of-type {
+        margin-bottom: 0px;
+    }
+    .card-body span{
+        margin-top: -15px;
+    }
+    .infoBox{
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:1370px){
+    .localization svg{
+        width: 17px;
+    }
+    .infoBox{
+        padding-top: 0px;
+    }
+}
+
+
+@media(max-width:1335px){
+    .card-body h5{
+        font-size: 18px;
+    }
+    .card-body p{
+        font-size: 12px;
+    }
+    .localization svg{
+        width: 16px;
+    }
+    .card-body span{
+        font-size: 15px;
+    }
+    .card-body > p:last-of-type {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .divInfo{
+        margin-top: 5px;
+    }
+}
+
+@media(max-width:1199px){
+    .divInfo{
+        display: none;
+    }
+    .infoBox{
+        margin-bottom: 15px;
+    }
+
+    .infoBox svg, .infoBox img{
+        width: 15px;
+    }
+    .info svg{
+        display: inline;
+    }
+}
+
+@media(max-width:1150px){
+    .dropdown-menu{
+        margin-left: 35%;
+    }
+    .card-body h5{
+        font-size: 15px;
+    }
+
+    .card-body span{
+        font-size: 13px;
+    }
+    .localization svg{
+        width: 15px;
+    }
+    .card-body > p:last-of-type {
+        margin-bottom: 0px;
+    }
+}
+
+
+@media(max-width:1017px){
+    .textUser{
+        margin-top: 15px;
+    }
+    .user img{
+        margin-left: 15px;
+    }
+    .card-body h5{
+        font-size: 13px;
+    }
+    .card-body p{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:991px){
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:958px){
+    .localization svg{
+        width: 13px;
+    }
+    .card-body span{
+        font-size: 12px;
+    }
+    .card-body > p:last-of-type {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:950px){
+    .dropdown-menu{
+        margin-left: 25%;
+    }
+}
+
+@media(max-width:900px){
+    .dropdown-menu{
+        margin-left: 15%;
+    }
+    .personalInfo a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:900px){
+    .dropdown-menu{
+        margin-left: 15%;
+    }
+}
+
+@media(max-width:805px){
+    .dropdown-menu{
+        margin-left: 0%;
+    }
+}
+
+@media(max-width:767px){
+    .btnMenu{
+        display: inline;
+    }
+    .personalInfo a{
+        font-size: 18px;
+    }
+    .user img{
+        margin-left: 0px;
+    }
+    .textUser{
+        margin-top: 0px;
+    }
+    .divInfo{
+        display: flex;
+    }
+    .infoBox{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .info svg{
+        display: none;
+    }
+    .img-carousel-item{
+        max-width: 300px;
+        max-height: 250px;
+    }
+    .divCarousel{
+        max-width: 300px;
+    }
+    .card-body{
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:728px){
+    .infoBox p{
+        display: inline;
+    }
+    .card-body{
+        margin-top: -10px;
+    }
+}
+
+
+@media(max-width:711px){
+    .divInfo:last-child{
+        margin-bottom: -15px;
+    }
+    .divInfo{
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:676px){
+    .infoBox{
+        padding: 5px 10px 5px 10px
+    }
+}
+
+@media(max-width:651px){
+    .infoBox{
+        padding-top: 2px;
+    }
+}
+
+@media(max-width:645px){
+    .divInfo{
+        display: none;
+    }
+    .info svg{
+        display: inline;
+    }
+    .infoBox{
+        margin-bottom: 15px;
+    }
+    .infoBox:last-child{
+        margin-bottom: 10px;
+    }
+    .card-body:first-child{
+        margin-top: 10%;
+    }
+    .img-carousel-item{
+        min-width: 200px;
+    }
+    .dropdown-menu{
+        margin-left: 25%;
+    }
+}
+
+@media(max-width:590px){
+    .dropdown-menu{
+        margin-left: 15%;
+    }
+}
+
+@media(max-width:575px){
+    .divForm h3{
+        text-align: center;
+    }
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 270px;
+    }
+    .img-carousel-item{
+        min-width: 120px;
+    }
+    .divCarousel{
+        margin-bottom: -20px;
+    }
+    .dropdown-menu{
+        margin-left: 25%;
+    }
+}
+
+@media(max-width:388px){
+    .textUser{
+        margin-top: 15px;
+    }
+    .user img{
+        margin-left: 15px;
+    }
+}
+
+@media(max-width:364px){
+    .breadcrumb-item{
+        font-size: 16px;
+    }
+    .divForm h3{
+        font-size: 21px;
+    }
+}
+
+@media(max-width:340px){
+    .btnSideMenu, .btnMenu{
+        height: 2.5rem;
+    }
+    .form-control{
+        font-size: 15px;
+    }
+    .btnMenu{
+        font-size: 17px;
+    }
+    .btnMenu svg{
+        margin-top: -2px;
+        margin-right: 0px;
+        width: 20px;
+    }
+    .btnSideMenu{
+        font-size: 17px;
+    }
+    .textUser h5{
+        font-size: 19px;
+    }
+    
+    .textUser span{
+        font-size: 15px;
+    }
+    .user img{
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media(max-width:325px){
+    .dropdown-menu{
+        margin-left: 15%;
+    }
+}

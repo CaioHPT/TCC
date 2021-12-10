@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brothers Car</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/logo-tamanho-certo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cadastro3.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navBar ">
+            <div class="container-fluid">
+                <img src="images/logo-tamanho-certo.png" alt="">
+
+                <div class="navbar-header">
+                    <button type="button" class='navbar-toggler' data-toggle="collapse" data-target="#navSite">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" style="color:#fff;"
+                            fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <nav class="collapse navbar-collapse pl-1" id="navSite">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/catalogo">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Conta</a>
+                        </li>
+                    </ul>
+                    <% if (user == null || user == undefined || user == '') { %>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cadastro">Sign up</a>
+                            </li>
+                            <a href="/incluircarro"><button class="btnNav">+ Sell Car</button></a>
+                        </ul>
+                    <% } else { %>
+                        <ul class="navbar-nav ml-auto">
+                            <li style="margin-top: 6px; margin-right: 20px ;color : white;" class="nav-item">
+                                Bem vindo, <%=user.email %>
+                            </li>
+                            <a href="/incluircarro"><button class="btnNav">+ Sell Car</button></a>
+                        </ul>
+                    <% } %>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <form method="POST" action="/<%=id %>?_method=PUT" enctype="multipart/form-data" class="row">
+            <div class="col-md-6 container mt-5">
+
+                <div class="col-md-12 mb-4">
+                    <h3 class="text-center font-weight-bold">Conte um pouco mais sobre o seu carro para gente</h3>
+                </div>
+                <label for="">Cadastro Nº</label>
+                <input type="text" id="id" name="id" class="form-group" disabled="disabled" value="<%=id %>">
+                <label for="">Quantos quilômetros seu carro já rodou?</label>
+                <input type="text" id="quilometragem" name="quilometragem" class="input" placeholder="Ex: 20.000" maxlength="6" required>
+
+                <label for="">Qual o tipo de combustível ?</label>
+                <select name="combustivel" class="input" id="selectanomodelo">
+                    <option selected>-- Selecione tipo de combustível</option>
+                    <option value="DIESEL" >DIESEL</option>
+                    <option value="GASOLINA" >GASOLINA</option>
+                    <option value="ETANOL" >ETANOL</option>
+                </select>
+
+                <label for="">E como é o câmbio ?</label>
+                <select name="cambio" class="input" id="selectanomodelo">
+                    <option selected>-- Selecione o tipo de câmbio</option>
+                    <option value="MANUAL" >MANUAL</option>
+                    <option value="AUTOMÁTICO" >AUTOMÁTICO</option>
+                    <option value="ESPORTIVO" >ESPORTIVO</option>
+                </select>
+
+                <label for="" class="mt-3">Por quanto você quer vender seu carro? (R$)</label>
+                <input type="text" id="preco"  name="preco" class="input" placeholder="Ex: 100.000,00"required>
+                <label for="" class="mt-3">Aqui você pode falar um pouco mais dos diferencias do seu carro. Mas não é
+                    obrigatorio, beleza?</label>
+                <input type="text" id="descricao" name="descricao" class="input">
+                <label for="">Envie fotos do seu carro:</label>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input name="fotoCarro" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01" accept="image/png, image/jpeg" required>
+                        <label class="custom-file-label" for="inputGroupFile01">Escolha a 1ª foto do seu carro</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input name="fotoCarro" type="file" class="custom-file-input" id="inputGroupFile02" aria-describedby="inputGroupFileAddon01" accept="image/png, image/jpeg" required>
+                        <label class="custom-file-label" for="inputGroupFile01">Escolha a 2ª foto do seu carro</label>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                        <input name="fotoCarro" type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon01" accept="image/png, image/jpeg" required>
+                        <label class="custom-file-label" for="inputGroupFile01">Escolha a 3ª foto do seu carro</label>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-6 col-sm-6 pt-3 text-center">
+                        <a href="/incluircarro"><button type="button" class="btn btnBack">Voltar</button></a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 pt-3 text-center">
+                        <a href="/incluircarro03"><button type="submit" class="btn btnNext">Continuar</button></a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/scriptIncluirCarro02.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+
+</body>
+
+</html>

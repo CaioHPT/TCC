@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+  }
+  
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+header{
+    font-size: 18px;
+    font-family: 'RobotoMono','monospace';
+}
+
+span{
+    margin: auto;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--bg-item);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.btnNav:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.nav-item:first-child{
+    margin-left: 15px;
+}
+
+.nav-item{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.divSucess{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.divSucess h4{
+    font-weight: bold;
+    color: rgb(41, 38, 38);
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.divButtons button{
+    font-weight: bold;
+    color:#fff;
+    background-color:#ff8800;
+    border-radius: 9px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.164);
+    transition: all .3s ease-in-out;
+    font-size: 18px;
+}
+
+.divButtons button:hover{
+    background-color: #ff5f02;
+}
+
+@media(max-width:991px){
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:451px){
+    .divSucess h4{
+        text-align: center;
+        font-size:24px;
+    }
+    .divButtons{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .divButtons button{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        font-size: 17px;
+    }
+}

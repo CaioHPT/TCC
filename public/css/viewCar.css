@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+  }
+  
+*{
+    font-family: 'RobotoMono';
+}
+
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+header{
+    font-size: 18px;
+}
+
+span{
+    margin: auto;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--bg-item);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.btnNav:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.nav-item:first-child{
+    margin-left: 15px;
+}
+
+.nav-item{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+main{
+    margin-bottom: 100px;
+}
+
+.preco {
+    font-size: 20px;
+}
+
+.rounded {
+    border-radius: 10px !important;
+}
+
+.btns {
+    border: solid 1px black;
+    background-color: transparent;
+}
+
+.boxshadow {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.158) 0px 0px 10px 1px;
+}
+
+.card {
+    min-width: 90px;
+    max-width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.199);
+    transition: all .4s ease-in-out;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 7px 1px rgba(245, 58, 235, 0.815);
+}
+
+.fotoCarro {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h5{
+    font-weight: bold;
+}
+
+.fotos {
+    min-width: 90px;
+    max-width: 100px;
+    height: 80px !important;
+    border-radius: 10px;
+}
+
+.esp2 {
+    margin-top: 43px ;
+}
+
+.infoDono {
+    position: fixed;
+    left: 55%;
+    transition: all .2s ease-in-out; 
+    text-align: center;
+}
+
+.userInfos img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.26);
+}
+
+
+@media(max-width:1800px){
+    .infoDono{
+        left: 60%;
+    }
+}
+
+@media(max-width:991px){
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+    .fotoCarro {
+        justify-content: center;
+    }
+
+    .card {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+
+@media(max-width:765px) {
+    .fotoCarro {
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:440px) {
+    .fotoCarro {
+        justify-content: center;
+    }
+
+    .card {
+        min-width: 90px;
+        max-width: 100px;
+    }
+}
+
+@media(max-width:825px) {
+    .infoDono {
+        position: static;
+        transform: translateX(0);
+    }
+}

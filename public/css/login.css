@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/BalooChettan2-Regular.ttf');
+  }
+  
+:root{
+    --bg:#1F1B2D;
+    --bg-item: #FFB000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'RobotoMono','monospace';
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+header{
+    font-size: 18px;
+}
+
+
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.navbar{
+    box-shadow: 0px 2.5px 10px rgba(0, 0,0, 0.5);
+}
+
+.navBar{
+    background-color: var(--bg);
+}
+
+.btnNav{
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background: var(--bg-item);
+    border: transparent;
+    width: 7rem;
+    height: 2.5rem;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.btnNav:hover{
+    background-color: #ff8800;
+    cursor: pointer;
+}
+
+.btnNav:focus{
+    outline: none;
+}
+
+.nav-link{
+    color: #fff;
+    filter: brightness(70%);
+}
+
+.nav-link:hover{
+    color: #fff;
+    filter: brightness(100%);
+}
+
+.nav-item:first-child{
+    margin-left: 15px;
+}
+
+.nav-item{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+main {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main form {
+    font-family: 'RobotoMono';
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.input{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.438);
+    color: var(--bg);
+    transition: all .2s ease-in-out;
+}
+
+.input:focus{
+    outline: none;
+    border-bottom: 4px solid rgb(233, 32, 32);
+}
+
+.btn-login {
+    margin-top: 10px;
+    background-color: #D21E25;
+    width: 150px;
+    border-radius: 12px;
+    padding: 5px;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+.btn-login:hover {
+    background-color: #bb1b20;
+    cursor: pointer;
+}
+
+#checkLogin:hover{
+    cursor: pointer;
+}
+
+.divSignIn{
+    margin-top: 50px;
+    margin-bottom:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divSignIn h5{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.divSignIn button{
+    margin-top: 10px;
+    width: 150px;
+    transition: all .3s ease-in-out;
+    padding: 8px;
+    background-color: #D21E25;
+    color: white;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.divSignIn button:hover{
+    background-color: #bb1b20;
+    cursor: pointer;
+
+}
+
+.errorLogin{
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    color: red;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.11);
+}
+
+@media(max-width:991px){
+    .nav-item{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .nav-item:first-child{
+        margin-left: 0px;
+    }
+    .imgLogin{
+        width: 170px;
+    }
+}
+
+@media(max-width:550px){
+    .imgLogin{
+        width: 160px;
+    }
+}
+
+@media(max-width:500px){
+    .imgLogin{
+        width: 130px;
+    }
+}
+
+@media(max-width:400px){
+    .input{
+        font-size: 17px;
+    }
+}
+
+@media(max-width:340px){
+    .input{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:300px){
+    .input{
+        font-size: 14px;
+    }
+}

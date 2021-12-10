@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/viewCar.css">
+    <title>Brothers Car</title>
+    <link rel="shortcut icon" href="images/logo-tamanho-certo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navBar ">
+            <div class="container-fluid">
+                <img src="images/logo-tamanho-certo.png" alt="">
+                
+                <div class="navbar-header">
+                    <button type="button" class='navbar-toggler' data-toggle="collapse" data-target="#navSite">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="50" height="40" style="color:#fff;" fill="currentColor" 
+                        class="bi bi-justify" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <nav class="collapse navbar-collapse pl-1" id="navSite">
+                    <ul class="nav navbar-nav mr-auto" >
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/catalogo">Catalogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Conta</a>
+                        </li>
+                    </ul>
+                    <% if (user == null || user == undefined || user == '') { %>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cadastro">Sign up</a>
+                            </li>
+                            <a href="/incluircarro"><button class="btnNav">+ Sell Car</button></a>
+                        </ul>
+                    <% } else { %>
+                        <ul class="navbar-nav ml-auto">
+                            <li style="margin-top: 6px; margin-right: 20px ;color : white;" class="nav-item">
+                                Bem vindo, <%=user.email %>
+                            </li>
+                            <a href="/incluircarro"><button class="btnNav">+ Sell Car</button></a>
+                        </ul>
+                    <% } %>
+                </nav>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <p class="mt-5">Home > <strong>Carros > Mercedes-Benz E 400 Cabriolet</strong></p>
+        <div class="row">
+            <div class="col-md-7 col">
+                <div id="carouselCar" class="carousel slide carousel-fade boxshadow" data-ride="carousel">
+                    <div class="carousel-inner" style="height: 20em;">
+                        <div class="carousel-item active h-100 rounded"
+                            style="background: url(photos/land-rover-discovery-sport.jpg) center/contain no-repeat;">
+                        </div>
+
+                        <div class="carousel-item h-100 rounded"
+                            style="background: url(../Carro-Onix-LTZ-1.0-Turbo-como-ilustracao-de-carros-seminovos.png) center/contain no-repeat;">
+                        </div>
+
+                        <div class="carousel-item h-100 rounded"
+                            style="background: url(../hyundai-prophecy-concept.jpg) center/contain no-repeat;">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselCar" role="button" data-slide="prev">
+                        <span aria-hidden="true"><img src="images/seta-esquerda.svg" style="height: 25px;"
+                                alt=""></span>
+                        <span class="sr-only">Prev</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselCar" role="button" data-slide="next">
+                        <span aria-hidden="true"><img src="images/seta.svg" style="height: 25px;" alt=""
+                                srcset=""></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="row mt-3 fotoCarro">
+                    <div class=" mb-4">
+                        <div class="card rounded">
+                            <a href="#carouselCar"  data-slide-to="0">
+                                <img src="photos/land-rover-discovery-sport.jpg" class="fotos" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" mb-4">
+                        <div class="card rounded">
+                            <a href="#carouselCar" data-slide-to="1">
+                                <img src="photos/"
+                                    class="fotos" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" mb-4">
+                        <div class="card rounded">
+                            <a href="#carouselCar" data-slide-to="2">
+                                <img src="../hyundai-prophecy-concept.jpg" class="fotos" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+          
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12 col mt-2 infoDono">
+                <p class="font-weight-bold mt-2 mb-1 preco">R$ 45,000</p>
+                <img src="images/chat.svg" alt=""> 25 quilometros |
+                <img src="images/geo-alt.svg" alt=""> Chicago, SP
+                <h6 class="font-weight-bold mt-3">Vendedor</h6>
+
+                <div class="userInfos">
+                    <img  src="images/imagePerfil.jpg" alt="">
+                    <h5>Marcio Careca Santos</h5>
+                    <div>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" 
+                            width="16" 
+                            height="17" 
+                            fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            <span>(11)2121-4912</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3 col-sm-6 col-6">
+                <h5>Especificações:</h5>
+                <p class="mt-3">Ano de fabricação: 2018</p>
+                <p>Quilometragem: 2500km</p>
+                <p>Tipo de carro seria: conversivel</p>
+                <p>Sistema de transmição: tração dianteira</p>
+                <p>Motor: 2.5 turbo 6 cilindros</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6 esp2">
+                <p>Tipo de gasolina: gasolina</p>
+                <p>Cor de fora: Branco</p>
+                <p>Cor de dentro: Preto</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-6">
+                <h5>Itens do veiculo</h5>
+                <p class="mt-3">Airbag</p>
+                <p>Computador de bordo</p>
+                <p>Freio ABS</p>
+                <p>Sensor de chuva</p>
+                <p>Vidros</p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-6 esp2">
+                <p>Airbag</p>
+                <p>Computador de bordo</p>
+                <p>Freio ABS</p>
+                <p>Sensor de chuva</p>
+                <p>Vidros</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 col-12">
+                <h5>Descrição do vendedor</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum blanditiis reiciendis, quos, ducimus
+                    odit commodi impedit magni velit, deserunt ut alias totam praesentium adipisci illo consectetur.
+                    Nesciunt excepturi animi eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+                    quibusdam, cum enim blanditiis vitae odit quidem aliquid natus, ea delectus facilis rem fugit ipsum?
+                    Consequatur, ratione tenetur! Eaque, repellat minus.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/scriptCatalogo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
